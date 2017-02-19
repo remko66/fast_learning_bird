@@ -37,7 +37,7 @@ it depents on pygame, keras, pandas, sci-image. The ananconda enviroment is incl
 
 Any questions? Need a freelance coder for neural networks or android apps? Or interested in this kind of stuff? remko66 (-at-) gmail.com
 
-No model is provided....it learns fast enough or your CPU...Just have a coffee or something and watch progress!
+No model is provided(oops...uploaded a bad one..please delete model.h5, it has only 5 minutes of training!)....it learns fast enough or your CPU...Just have a coffee or something and watch progress!
 
 To start from scratchs:
 
