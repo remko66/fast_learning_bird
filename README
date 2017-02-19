@@ -1,0 +1,78 @@
+A non-DQN implementation playing flappy bird...learns fast enough for any cpu!
+
+Fast, more human like style learning experiment. For people who don't have a titan X and want to train game playing bots!
+
+
+So we know we can make DQN systems play games.
+
+problem is, they are slow to train (10 hours on a titan x... i don't have a titan X!)
+
+So is there a way we can make it learn as fast as a human? (took me couple of hours to play it a little, oke, still not good at it)
+
+How do we do it?
+
+    - we read instructions, that make pictures in our head of what can go wrong
+    - try to avoid that
+
+
+So, if we can make a nearal net that can translate written instructions to pictures of what can go wrong and train from their, we
+should get fast results. (and have H-learning, human learning!)
+
+This is the seccond part of the solution. Still working on a crash image generator that takes a screenshot and generates all that can go wrong
+So can we train a bot to play flappy bird just from images of flappy bird crashing?
+
+Turns out it is not only possible but it learns very fast. One hour on an I5 CPU should be enough to get some decent results
+
+After about 35 times (10 games per try) it is already starting to get the hang of it! (after 50 it looks nice)
+
+So that is about 15.000 frames of training to get some results (not perfect yet at that stage) compared to far over a million on DQN networks.
+
+Try it...forget about your graphics card, your cpu will do just fine!
+
+No working on the second part...taken an image of the background and of the bird (that is normally in human documentation) can i generate the crash pictures?
+
+If so we are getting close to learn a machine play flappy bird the way you learned it!
+
+it depents on pygame, keras, pandas, sci-image. The ananconda enviroment is included as conda_env just import that and you are good to go.
+
+Any questions? Need a freelance coder for neural networks or android apps? Or interested in this kind of stuff? remko66 (-at-) gmail.com
+
+No model is provided....it learns fast enough or your CPU...Just have a coffee or something and watch progress!
+
+To start from scratchs:
+
+- Leave images in high low (as they can not be generated yet from games description)
+- Empty don't and flap (well leave one image in both else it crashes...take on from low for flap one from high for don't...bogus images also oke)
+- params -m Train or run (train of course...)
+
+
+
+directories:
+
+trainingstuff:
+ - dont images where it flapped before and crashed...don't flap is the game looks like this (leave one image here before start..didn't bother to check if empty)
+ - flap images where the game didn't flap and crash..flap if you see this! (leave one image here before start..didn't bother to check if empty)
+ - high (picures of crashes on the ceiling)
+ - low  (picures of crashes on the ground)
+
+ shouldbehigh/shouldbelow saves pics here after crashing so can check the flap crash investigator
+
+
+Copyright: Yes, you have the right to copy...If you do drop me an email and make my day, though that is just a friendly request.
+
+
+Remko Weingarten
+
+
+
+
+Disclaimer
+
+This work is highly based on the following repos:
+
+
+https://github.com/yanpanlau/Keras-FlappyBird
+
+https://github.com/yenchenlin/DeepLearningFlappyBird
+
+http://edersantana.github.io/articles/keras_rl/
