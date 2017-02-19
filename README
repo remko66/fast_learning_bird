@@ -11,11 +11,11 @@ So is there a way we can make it learn as fast as a human? (took me couple of ho
 
 How do we do it?
 
-    - we read instructions, that make pictures in our head of what can go wrong
+    - we read instructions, than make pictures in our head of what can go wrong(or is that just me?
     - try to avoid that
 
 
-So, if we can make a nearal net that can translate written instructions to pictures of what can go wrong and train from their, we
+So, if we can make a neural net that can translate written instructions to pictures of what can go wrong and train from their, we
 should get fast results. (and have H-learning, human learning!)
 
 This is the seccond part of the solution. Still working on a crash image generator that takes a screenshot and generates all that can go wrong
