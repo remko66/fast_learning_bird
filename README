@@ -28,6 +28,7 @@ After about 35 times (10 games per try) it is already starting to get the hang o
 So that is about 15.000 frames of training to get some results (not perfect yet at that stage) compared to far over a million on DQN networks.
 
 Try it...forget about your graphics card, your cpu will do just fine!
+(just create the anaconda env with conda-env (provided) and run MLPFlap.py)
 
 No working on the second part...taken an image of the background and of the bird (that is normally in human documentation) can i generate the crash pictures?
 
